@@ -11,6 +11,7 @@ export default configure(() => {
     build: {
       target: { browser: ['es2022', 'firefox115', 'chrome115', 'safari14'] },
       vueRouterMode: 'hash',
+      publicPath: '/portfolio/',
       vitePlugins: [],
     },
     devServer: {
