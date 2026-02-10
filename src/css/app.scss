@@ -1,0 +1,39 @@
+// Global styles
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-padding {
+  padding: 64px 0;
+
+  @media (max-width: $breakpoint-sm-max) {
+    padding: 40px 0;
+  }
+}
+
+.section-band {
+  background-color: #F7FAFC;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2D3748;
+  margin-bottom: 32px;
+
+  @media (max-width: $breakpoint-sm-max) {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+}
+
+.diagram-scroll {
+  overflow-x: auto;
+
+  svg {
+    min-width: 600px;
+  }
+}
