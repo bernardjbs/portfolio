@@ -42,13 +42,14 @@
     <line x1="675" y1="125" x2="730" y2="125" class="arrow" marker-end="url(#rf-arrow-d)" />
 
     <!-- Lane 4: Storage -->
-    <rect x="735" y="65" width="150" height="55" rx="10" class="box storage" />
-    <text x="810" y="88" class="box-title">MySQL 8</text>
-    <text x="810" y="106" class="box-sub">Knex.js + Zod</text>
+    <rect x="735" y="55" width="150" height="70" rx="10" class="box storage" />
+    <text x="810" y="78" class="box-title">MySQL 8</text>
+    <text x="810" y="95" class="box-sub">Query Builder (Knex.js)</text>
+    <text x="810" y="112" class="box-sub">Schema Validation (Zod)</text>
 
-    <rect x="735" y="135" width="150" height="55" rx="10" class="box storage" />
-    <text x="810" y="158" class="box-title">Redis 7</text>
-    <text x="810" y="176" class="box-sub">Cache + Queues</text>
+    <rect x="735" y="140" width="150" height="60" rx="10" class="box storage" />
+    <text x="810" y="163" class="box-title">Redis 7</text>
+    <text x="810" y="180" class="box-sub">Selector Cache + Job Queues</text>
 
     <defs>
       <marker id="rf-arrow-d" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
@@ -59,7 +60,7 @@
 
   <!-- Mobile: vertical flow -->
   <svg
-    viewBox="0 0 300 620"
+    viewBox="0 0 300 680"
     xmlns="http://www.w3.org/2000/svg"
     class="architecture-diagram mobile-diagram"
   >
@@ -98,13 +99,13 @@
     <line x1="150" y1="445" x2="150" y2="470" class="arrow" marker-end="url(#rf-arrow-m)" />
 
     <!-- Row 4: Storage -->
-    <rect x="30" y="475" width="115" height="55" rx="10" class="box storage" />
-    <text x="87" y="498" class="box-title">MySQL 8</text>
-    <text x="87" y="516" class="box-sub">Knex.js + Zod</text>
+    <rect x="30" y="475" width="240" height="60" rx="10" class="box storage" />
+    <text x="150" y="498" class="box-title">MySQL 8</text>
+    <text x="150" y="516" class="box-sub">Query Builder (Knex.js) | Validation (Zod)</text>
 
-    <rect x="155" y="475" width="115" height="55" rx="10" class="box storage" />
-    <text x="212" y="498" class="box-title">Redis 7</text>
-    <text x="212" y="516" class="box-sub">Cache + Queues</text>
+    <rect x="30" y="550" width="240" height="55" rx="10" class="box storage" />
+    <text x="150" y="573" class="box-title">Redis 7</text>
+    <text x="150" y="591" class="box-sub">Selector Cache + Job Queues</text>
 
     <defs>
       <marker id="rf-arrow-m" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
