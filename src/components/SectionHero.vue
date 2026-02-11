@@ -31,7 +31,7 @@
       no-caps
     />
 
-    <div class="scroll-indicator">
+    <div class="scroll-indicator" @click="scrollToAbout" role="button" aria-label="Scroll down">
       <q-icon name="keyboard_arrow_down" size="32px" color="white" />
     </div>
   </section>
@@ -39,6 +39,11 @@
 
 <script setup lang="ts">
 import { hero } from 'src/data/content'
+
+function scrollToAbout() {
+  const about = document.getElementById('about')
+  about?.scrollIntoView({ behavior: 'smooth' })
+}
 </script>
 
 <style scoped lang="scss">
@@ -95,6 +100,12 @@ import { hero } from 'src/data/content'
   bottom: 24px;
   animation: bounce 2s infinite;
   opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
 
   @media (max-height: 500px) {
     display: none;
