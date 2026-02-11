@@ -30,6 +30,10 @@
       class="q-mt-md"
       no-caps
     />
+
+    <div class="scroll-indicator">
+      <q-icon name="keyboard_arrow_down" size="32px" color="white" />
+    </div>
   </section>
 </template>
 
@@ -41,6 +45,7 @@ import { hero } from 'src/data/content'
 @use 'sass:color';
 
 .hero-section {
+  position: relative;
   background: linear-gradient(135deg, $primary 0%, color.adjust($primary, $lightness: -15%) 100%);
   min-height: 100vh;
   min-height: 100dvh;
@@ -82,6 +87,29 @@ import { hero } from 'src/data/content'
 
   @media (max-width: $breakpoint-sm-max) {
     font-size: 1rem;
+  }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 24px;
+  animation: bounce 2s infinite;
+  opacity: 0.7;
+
+  @media (max-height: 500px) {
+    display: none;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
   }
 }
 
