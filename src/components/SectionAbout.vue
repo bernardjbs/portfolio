@@ -1,5 +1,5 @@
 <template>
-  <section class="section-padding">
+  <section id="about" class="section-padding">
     <div class="q-mx-auto" style="max-width: 800px; padding: 0 24px">
       <h2 class="section-title">About</h2>
       <p v-for="(line, i) in about.summary" :key="i" class="about-text">
