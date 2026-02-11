@@ -43,6 +43,7 @@ import { hero } from 'src/data/content'
 .hero-section {
   background: linear-gradient(135deg, $primary 0%, color.adjust($primary, $lightness: -15%) 100%);
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 40px 24px;
 }
 
