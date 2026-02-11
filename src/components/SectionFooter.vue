@@ -2,7 +2,7 @@
   <footer class="footer-section column items-center text-center text-white">
     <h2 class="footer-tagline">{{ footer.tagline }}</h2>
 
-    <div class="q-gutter-md row items-center q-mb-lg">
+    <div class="footer-links q-mb-lg">
       <a :href="`mailto:${hero.email}`" class="footer-link">
         <q-icon name="email" size="20px" class="q-mr-xs" />
         {{ hero.email }}
@@ -40,6 +40,19 @@ import { footer } from 'src/data/content'
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 24px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $breakpoint-sm-max) {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 .footer-link {

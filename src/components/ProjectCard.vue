@@ -63,11 +63,19 @@ const diagramComp = computed(() => {
   padding-left: 20px;
   margin: 0;
 
+  @media (max-width: $breakpoint-sm-max) {
+    padding-left: 16px;
+  }
+
   li {
     font-size: 0.9rem;
     line-height: 1.6;
     color: #4A5568;
     margin-bottom: 6px;
+
+    @media (max-width: $breakpoint-sm-max) {
+      font-size: 0.85rem;
+    }
   }
 }
 </style>

@@ -32,6 +32,10 @@ import { experience } from 'src/data/content'
     line-height: 1.6;
     color: #4A5568;
     margin-bottom: 8px;
+
+    @media (max-width: $breakpoint-sm-max) {
+      font-size: 0.875rem;
+    }
   }
 }
 </style>
