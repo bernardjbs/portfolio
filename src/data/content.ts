@@ -90,7 +90,7 @@ export const projects: Project[] = [
       'CSS selector engine stored in DB with 60s cache TTL, live validation, and CLI management tool',
       'Queue-based scheduling with BullMQ: fixtures, odds, results, and selector validation at configurable intervals',
       'Express + Bull Board monitoring dashboard for queue inspection',
-      'Zod validation for match scores, possession sums, and odds probability normalization',
+      'Zod validation for match scores, possession sums, and odds probability normalisation',
     ],
     diagramComponent: 'RoofootArchitecture',
   },
